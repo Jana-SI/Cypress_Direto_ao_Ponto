@@ -1,8 +1,11 @@
-inicializar um projeto Node
+**Inicializar um projeto Node**
 
     npm init --yes
 
-instalar o cypress
+**Instalar o cypress**
 
     npm install -D cypress
     npm install -D cypress@12.5.0
+
+**Abrir o cypress**
+    npx cypress open
