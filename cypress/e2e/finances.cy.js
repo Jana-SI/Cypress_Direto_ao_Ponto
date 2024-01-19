@@ -10,5 +10,7 @@ describe('Transações', () => {
         cy.get('#date').type("2024-01-02")  // yyyy-mm-dd
 
         cy.contains("button", "Salvar").click()
+
+        cy.get("tbody tr td.description").should("have.text", "Dev Front")
     });
 });
