@@ -17,8 +17,12 @@ describe('Transações', () => {
         cy.get("tbody tr td.description").should("have.text", "Dev Front")
     });
 
-    it.skip('Cadastrar uma saída', () => {
-        
+    it('Cadastrar uma saída', () => {
+        cy.visit("https://devfinance-agilizei.netlify.app/#")
+
+        criarTransacao("Praia", -50)
+
+        cy.get("tbody tr td.description").should("have.text", "Praia")
     });
 });
 
