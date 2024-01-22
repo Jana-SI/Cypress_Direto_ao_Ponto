@@ -24,10 +24,24 @@ describe('Transações', () => {
     });
 
     it('Cadastrar uma saída', () => {
-        
+
         criarTransacao("Praia", -50)
 
         cy.get("tbody tr td.description").should("have.text", "Praia")
+    });
+
+    it('Excluir transação', () => {
+        
+        criarTransacao("Dev Front", 2500)
+        criarTransacao("Dev Back", 3000)
+
+        cy.contains('.description', "Dev Back") //td -> referencia
+        .parent() // tr
+        .find('img') // elemento que a gente precisa
+        .click()
+
+        cy.get('tbody tr').should("have.length", 1)
+
     });
 });
 
