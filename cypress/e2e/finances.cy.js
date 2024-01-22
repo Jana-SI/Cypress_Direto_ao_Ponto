@@ -1,8 +1,14 @@
 
 
 describe('Transações', () => {
-    it('Cadastrar uma entrada', () => {
+
+    // hooks -> executar antes(before) ou depois(after) / de cada(beforeEach / afterEach) ou de todos os testes
+
+    beforeEach(() => {
         cy.visit("https://devfinance-agilizei.netlify.app/#")
+    });
+
+    it('Cadastrar uma entrada', () => {
 
         /* cy.contains("Nova Transação").click()
         cy.get('#description').type("Dev Front")
@@ -18,8 +24,7 @@ describe('Transações', () => {
     });
 
     it('Cadastrar uma saída', () => {
-        cy.visit("https://devfinance-agilizei.netlify.app/#")
-
+        
         criarTransacao("Praia", -50)
 
         cy.get("tbody tr td.description").should("have.text", "Praia")
