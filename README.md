@@ -16,3 +16,8 @@
 **Site utilizado para testes**
 
     https://devfinance-agilizei.netlify.app/
+
+**Alterando configurações usando a linha de comando**
+
+    npx cypress run --config viewportHeight=1000,viewportWidth=600
+
