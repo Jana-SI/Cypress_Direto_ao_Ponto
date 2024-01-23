@@ -1,3 +1,7 @@
+#Curso Cypress Direto ao Ponto ![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+
+---
+
 **Inicializar um projeto Node**
 
     npm init --yes
@@ -23,3 +27,6 @@
 
     npx cypress run --config viewportHeight=1000,viewportWidth=600
 
+---
+
+## 💻 Curso: [Curso de Cypress Direto ao Ponto - Matheus Battisti - Hora de Coda](https://app.agilizei.com/pt/cursos/cypress-direto-ao-ponto)
