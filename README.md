@@ -13,6 +13,8 @@
 
     npx cypress run (sem interface grafica / resultado no terminal)
 
+    npm test (configurando o script package.json)
+
 **Site utilizado para testes**
 
     https://devfinance-agilizei.netlify.app/
