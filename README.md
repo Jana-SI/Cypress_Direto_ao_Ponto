@@ -9,7 +9,9 @@
 
 **Abrir o cypress**
 
-    npx cypress open
+    npx cypress open (interface grafica)
+
+    npx cypress run (sem interface grafica / resultado no terminal)
 
 **Site utilizado para testes**
 
